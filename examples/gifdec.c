@@ -297,8 +297,6 @@ void GIFBlendFrames(const WebPPicture* const src,
 void GIFDisplayError(const GifFileType* const gif, int gif_error) {
   // libgif 4.2.0 has retired PrintGifError() and added GifErrorString().
   // Static string actually, hence the const char* cast.
-  const char* error_str = (const char*)GifErrorString(
-      (gif == NULL) ? gif_error : gif->Error);
 }
 
 #else  // !WEBP_HAVE_GIF
