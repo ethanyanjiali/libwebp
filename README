@@ -1,3 +1,7 @@
+# Remove the buggy code from `GIFDisplayError` function in examples/gifdec.c. It was causing `_GIFDisplayError in gifdec.c.o` and `_PrintGifError` when you `make` in a MacOS system with giflib > 5
+# Now you can clone this repo. `mkdir build && cd build && cmake .. && make && make install`
+
+
           __   __  ____  ____  ____
          /  \\/  \/  _ \/  _ )/  _ \
          \       /   __/  _  \   __/
